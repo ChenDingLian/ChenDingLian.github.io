@@ -1,0 +1,84 @@
+<html>
+<head>
+<style>
+.myDiv_full {
+  border: 1px solid blue;
+  width: 500px;
+  height: 100px;
+  position: relative;
+  background-color: lightblue;
+}
+.myDiv_half {
+  position: absolute;
+  border: 1px solid red;
+  top: 30px;
+  right: 0px;
+  height: 100px;
+  background-color: green;
+}
+.myDiv_quarter {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+  width: 50%;
+  bottom: 50px;
+}
+.div_relative {
+  
+  position: absolute;
+  border: 1px solid red;
+  top: 30px;
+  right: 0px;
+  height: 100px;
+  background-color: green;
+}
+.div_fixed_1 {
+  position: fixed;
+  border: 1px solid blue;
+  background-color: rgba(255,200,200,0.5);  
+  width: 300px;
+  height: 200px;
+  bottom: 0px;
+  left: 0px;
+}
+.div_sticky_1 {
+  position: sticky;
+  border: 1px solid red;
+  top: 10px;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>Header 1</h1>
+
+<div class="myDiv_full">
+  <p>This div element is relative.</p>
+</div>
+<div class="myDiv_full">
+  <p>This div element is relative.</p>
+</div>
+<p>This is some text outside the div element.</p>
+<div class="myDiv_half">
+  <h2>This div element is absolute.</h2>
+  <p>This is some text in a div element.</p>
+  <div class="myDiv_quarter">
+  <h2>This div element is relative.(included by </h2>
+  <p>This is some text in a div element.</p>
+  </div>
+</div>
+<div class="div_fixed_1">
+  <h2>This div element is fixed.</h2>
+  <p>This is some text in a div element.</p>
+</div>
+<div class="div_sticky_1">
+  <h2>This div element is sticky.</h2>
+  <p>This is some text in a div element.</p>
+</div>
+<p>This is some text outside the div element.</p>
+
+</body>
+</html>
