@@ -9,22 +9,39 @@ overflow: auto;/*problem fix*/
 }
 
 .column1of3{
-border: solid 1px;
+
 	width: 300px;
 	float: left;
 	margin: 10px;
+	position: relative;
+    border: 1px solid red;
+    top: 30px;
+    right: 0px;
+    height: 100px;
 }
 .column2of3{
-border: solid 1px;
-	width: 300px;
+    
 	float: left;
 	margin: 10px;
+	position: fixed;
+    border: 1px solid blue;
+    background-color: rgba(255,200,200,0.5);  
+    width: 300px;
+    height: 200px;
+    bottom: 0px;
+    left: 0px;
 }
 .column3of3{
-border: solid 1px;
+    
 	width: 300px;
 	float: right;
 	margin: 10px;
+	position: sticky;
+    border: 1px solid red;
+    top: 10px;
+    background-color: white;
+    width: 90%;
+    margin: auto;
 }
 </style>
 </head>
